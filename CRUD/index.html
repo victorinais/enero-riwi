@@ -27,22 +27,26 @@
             Crear Usuario
           </button>
         </div>
+        <div class="col-6 mt-3">
+          <input type="search" onkeyup="search()" placeholder="Buscar..." class="form-control form-control-lg" id="search" >
+        </div>
         <div class="col-6 mt-2">
           <div class="card">
             <div class="card-body">
               <div class="mt-4">
-                <label for="">Nombre</label>
+                <label for="name-edit">Nombre</label>
                 <input type="text" class="form-control" id="name-edit" />
               </div>
               <div class="mt-4">
-                <label for="">Correo</label>
+                <label for="email-edit">Correo</label>
                 <input type="text" class="form-control" id="email-edit" />
               </div>
               <div class="mt-4">
-                <label for="">Contraseña</label>
+                <label for="password-edit">Contraseña</label>
                 <input type="text" class="form-control" id="password-edit" />
               </div>
-              <button class="btn mt-4 w-100 btn-success">
+              <input type="hidden" id="id_edit">
+              <button class="btn mt-4 w-100 btn-success" onclick="update()">
                 Actualizar Usuario
               </button>
             </div>

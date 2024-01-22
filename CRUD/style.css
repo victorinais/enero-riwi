@@ -3,7 +3,9 @@ body {
 }
 .titulo {
   color: #fff;
+  text-transform: uppercase;
 }
 h1 {
   color: #000;
+  
 }
